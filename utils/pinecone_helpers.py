@@ -3,8 +3,8 @@ from model.model_load import load_model
 from utils.preprocess import preprocess_image
 
 # Initialize Pinecone
-pc = pinecone(api_key="pcsk_2agnRW_PJGcuYNduPh4LXPttu1bnT31UninNBGbyZqKDUiCDAxdY7asgDJkLHmR3KCDJzP")
-index = pc.Index("new")
+pc = pinecone(api_key="")
+index = pc.Index("")
 
 model, _ = load_model()
 
