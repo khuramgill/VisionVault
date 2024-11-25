@@ -1,0 +1,5 @@
+flask
+torch
+clip-by-openai
+Pillow
+pinecone-client
