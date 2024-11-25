@@ -1,5 +1,5 @@
 import pinecone
-from model.model_load import load_model
+from model.load_model import load_model
 from utils.preprocess import preprocess_image
 
 # Initialize Pinecone
