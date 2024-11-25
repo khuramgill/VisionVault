@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <img src="{{ url_for('static', filename='uploads/' + query_image) }}" alt="Query Image" width="300">
+    <h2>Matches:</h2>
+    <ul>
+        {% for result in results %}
+        <li>
+            <a href="{{ result.url }}" target="_blank">Match {{ loop.index }} (Score: {{ result.score }})</a>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back to Home</a>
+</body>
+</html>
