@@ -1,10 +1,11 @@
 import pinecone
+from preprocess import preprocess_image
 from model.load_model import load_model
-from utils.preprocess import preprocess_image
+import torch
 
 # Initialize Pinecone
-pc = pinecone(api_key="")
-index = pc.Index("")
+pc = pinecone(api_key="Key")
+index = pc.Index("new")
 
 model, _ = load_model()
 

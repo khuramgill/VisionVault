@@ -1,5 +1,5 @@
 from PIL import Image
-from model.model_load import load_model
+from model.load_model import load_model
 
 model, preprocess = load_model()
 
