@@ -4,9 +4,8 @@ from model.load_model import load_model
 import torch
 
 # Initialize Pinecone
-pc = pinecone(api_key="Key")
+pc = pinecone(api_key="pcsk_2agnRW_PJGcuYNduPh4LXPttu1bnT31UninNBGbyZqKDUiCDAxdY7asgDJkLHmR3KCDJzP")
 index = pc.Index("new")
-
 model, _ = load_model()
 
 def query_pinecone(image_path):
